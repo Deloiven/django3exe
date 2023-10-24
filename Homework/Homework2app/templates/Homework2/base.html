@@ -1,0 +1,46 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+        <meta charset="UTF-8">
+
+    <link type="text/css" href="{% static 'Homework2app/css/styles.css' %}" rel="stylesheet" />
+    <!-- Прикрутил стили -->
+    <style>
+        .big-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .big-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="about" class="big-button">О сайте</a>
+    <a href="client" class="big-button">Клиенты</a>
+    <a href="index" class="big-button">Главная страница</a>
+    <a href="report" class="big-button">Отчеты</a>
+    <a href="product_list" class="big-button">Список продуктов</a>
+    <a href="product_detail" class="big-button">product_detail</a>
+    <a href="testJs" class="big-button">Домашняя работа номер 3 JS</a>
+</header>
+{% block content %}
+{% endblock %}
+<footer>
+    <p>&copy; 2023 My Website</p>
+</footer>
+</body>
+</html>
